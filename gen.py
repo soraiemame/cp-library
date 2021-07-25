@@ -19,6 +19,8 @@ def main():
     
     with open("snippet.json","w") as out:
         json.dump(res,out,indent=4)
+    
+    print(json.dumps(res,indent=4))
 
 if __name__ == "__main__":
     main()
