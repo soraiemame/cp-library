@@ -1,5 +1,5 @@
 priority_queue<pll,vector<pll>,greater<pll>> que;
-vector<ll> dist(N);
+vector<ll> dist(N,INF);
 que.emplace(0,0);
 dist[0] = 0;
 while(!que.empty()){
