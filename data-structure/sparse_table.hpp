@@ -9,8 +9,8 @@ struct SparseTable{
         table = std::vector<std::vector<T>>(log,std::vector<T>(n));
         for(int i = 0;i < n;i++)table[0][i] = table_[i];
         for(int i = 1;i < log;i++){
-            for(int j = 0;j + (1 << i - 1) < n;j++){
-                table[i][j] = std::min(table[i - 1][j],table[i - 1][j + (1 << i - 1)]);
+            for(int j = 0;j + (1 << (i - 1)) < n;j++){
+                table[i][j] = std::min(table[i - 1][j],table[i - 1][j + (1 << (i - 1))]);
             }
         }
     }
