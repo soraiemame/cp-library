@@ -1,12 +1,3 @@
-#ifndef SORAIE_GEOMETORY_MAIN
-#define SORAIE_GEOMETORY_MAIN
-
-#include <vector>
-#include <complex>
-#include <iostream>
-#include <algorithm>
-#include <cassert>
-
 using DD = long double;
 struct point{
     DD x,y;
@@ -562,5 +553,3 @@ g_graph visibilitygraph(const VP& vp,const std::vector<polygon>& objs){
     }
     return res;
 }
-
-#endif /*SORAIE_GEOMETORY_MAIN*/
